@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="Content-type" content="text/html">
+    <!--This is used to set the viewport accordingly to the device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../scripts/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../css/style.css">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <!--The button is used on mobile devices in order to provide a dropdrown navigation bar -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon" ></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <!--This unordered list contains the items of the navigation bar-->
+              <ul class="navbar-nav" id="navigation-list">
+                <li class="nav-item"> <a class="nav-link" href="../../index.html">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../../structure/projects.html">Projects</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../structure/events.html">Events</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../structure/games.html">Games</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="../../structure/ongoing.html">Ongoing</a></li>
+              </ul>
+            </div>
+        </nav>
+  
+    </head>
+
+<body>
+    <div class="container main-content">
+        <h1 class="font-weight-bold text-black text-center">Photography website - Browse a collection of incredible
+            pictures</h1>
+        <div class="row">
+            <img src="images/image_main.jpg" class="img-main col-md col-lg" alt="Responsive image">
+            <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
+            <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
+            <h2 class="text-black mt-5">Introduction</h2>
+            <p>I have decided to build a photography website because my best friend is a professional photographer who
+                enjoys sharing her work with other people. She wanted someone to advertise her work on the internet and
+                I thought I may be able to help her. She was really interested in hearing my intentions in building a
+                website around her work and provided me with all the necessary content. Building this website was not
+                only fun, but I also had a sense of accomplishment because I was able to help someone promote their
+                work.
+
+            </p>
+            <div>
+                <h2 class="text-black mt-5">Target audience</h2>
+                <p>The first thing I thought about when starting to build my website was the target audience. Who is
+                    going
+                    to visit my website? After thinking a bit, I have decided that I am going to target people from the
+                    UK
+                    who are beginners in photography. From this decision, I have drawn the following piece of paper with
+                    all
+                    the things I have to keep in mind and build my website upon.
+                </p>
+                <ul>
+                    <li>The website should include tutorials to help people learn how to take good pictures</li>
+                    <li>The audience age is between 16 and 50</li>
+                    <li>Their mother tongue is English</li>
+                    <li>Most of them are accustomed to using technology on a daily basis</li>
+                    <li>There is a small percentage of them who are colour blind and have disabilities</li>
+                </ul>
+            </div>
+            <h2>Prototyping and first design</h2>
+            <p>
+                After wireframing and creating the site map, I thought it would be a good idea to make a working
+                prototype of the website instead of going straight into coding the website. I decided to use a
+                professional tool for designing, Adobe XD. This software also allowed me to create a working prototype
+                of my website and linking pages together. Moreover, by creating a working prototype, I was able to do
+                some user testing in the early stages of my project. The final website looks pretty similar to the
+                working prototype with just some modification. The working prototype is available
+                <a href="https://xd.adobe.com/view/565a5d22-13e5-433f-66b9-226a215090c0-206b/">here.</a>
+            </p>
+            <h2>Color scheme</h2>
+            <p>According to experts
+                , a dark
+                colour scheme is more appropriate when designing websites for entertaining purposes or for media ones.
+                Moreover, no matter what types of images, a dark colour scheme will always appear nice when combining
+                with any type of image. Such examples include Netflix, Hulu or Spotify. I made sure that the text is
+                readable under any circumstances by having white or blue text over the dark backgrounds.</p>
+            <h2>Image resolution</h2>
+            <p>The images on the website have a PPI of around 82. Web developers recommend a PPI of 72, but because this
+                is a website dedicated to photography I have decided to implement a bit higher resolution. Because the
+                images will take more space on a large device such as a monitor, I had to provide 3 different image
+                sizes: for large devices, medium devices and small devices. I took the images I wanted to display on the
+                website and used Photoshop’s option “Export for web” to resize all my images. However, I had made the
+                following calculations for choosing the appropriate resolutions. The actual images do not have the exact
+                same resolutions as shown below because I wanted to maintain their aspect ratio.
+                I have created some images for medium screen devices that do not have screenshots here as well, but they
+                are displayed when the screen width is between 768px and 992px. However, since tablets nowadays have
+                bigger and bigger screen resolutions, the images for tables are the same size as those for desktop
+                devices.</p>
+ 
+ 
+            </div>
+            <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+                <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()" role="button">See
+                    all the screenshots</a>
+            </div>
+    
+            <div id="my-modal" class="modal">
+                <!--The method closeModal() is called when the user clicks the close button-->
+                <span class="close-model cursor" onclick="closeModal()">&times;</span>
+                <!--Below is the div for the content of the modal-->
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main2.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main3.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main4.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main5.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main6.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main7.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main7.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img class="responsive-image image-modal" src="images/image_main7.jpg">
+                    </div>
+                    <!-- Next/previous controls -->
+                    <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
+                    <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+            <a class="btn btn-primary" role="button">Check my website!</a>
+        </div>
+        
+            </div>
+   
+
+</body>
+
+</html>

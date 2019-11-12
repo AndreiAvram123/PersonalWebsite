@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="Content-type" content="text/html">
+    <!--This is used to set the viewport accordingly to the device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hack Manchester</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../scripts/script.js"></script>
+
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-item" href="../../index.html" id="home">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../structure/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../structure/events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../structure/ongoing.html">Ongoing</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="container main-content">
+        <h1 class="font-weight-bold text-black text-center">HackManchester 2019 - 24 hours full of coding</h1>
+        <div class="row">
+            <img src="images/image_main.png" style="max-width: 30vw;" class="img-main col-md col-lg"
+                alt="Responsive image">
+            <img src="images/image_main2.png" style="max-width: 40vw;" class="img-main col-md col-lg"
+                alt="Responsive image">
+
+
+            <div>
+                <h2 class="text-black mt-5">Introduction</h2>
+                <p>HackManchester is an annual hackaton organised every year and takes place in the Museum of Science
+                    and
+                    Industry Manchester. People usually come here as part of a team of 4 and choose a specific challenge
+                    from a given list. Afterwards they
+                    have 24 hours to build at least a working prototype that would show that their
+                    idea can be implemented.Some of them struggle with the complexity of their idea while
+                    others simply get their head around and manage to build their fully working product in
+                    time. However, one thing is certain, everyone is having a good time(who knows..maybe for the
+                    caffeine
+                    buzz?).
+                </p>
+            </div>
+            <div>
+                <h2>Our magnific team </h2>
+                <img src="images/image_main3.jpg" style="max-width: 35vw" class="col-md col-lg">
+                <div style="float: right;">
+                    <p><strong>Ricards Augustauskis</strong> - Java, HTML and CSS programmer</p>
+                    <p><strong>Adam Jones</strong> - Lead GO programmer</p>
+                    <p><strong>Nela Ion</strong> - Designer</p>
+                    <p><strong>Andrei Avram</strong> - Lead Android programmer</strong></p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <h2>The Hive and The Bees</h2>
+                <p>My team was composed by my friends from the University of Salford, 3 of us
+                    from Computer Science and the designer from Game design and Production.
+                    The skills in our team were mixed, some of us were very good at design while
+                    others were better at programming.<br>
+                    When it came to choosing a challenge, we thought that the one proposed
+                    by the Co-Op would be the most interesting one. The task was "Design a product that
+                    would incourage people from your local area to help each other".After some brainstorming
+                    and careful consideration our app, "The Hive" was born.<br>
+                    Why Hive and what's up with those bees?
+                    Because Manchester of course ! In order to encourage the local popularity of the app we thought that
+                    people that help each other are like bees in a hive. All for one and one for all. This was the
+                    inspiration for the name of our team as well. We constantly presented ourselves to the judges as
+                    being
+                    "The bees"
+                </p>
+            </div>
+            <div>
+                <h2>After 24 hours of working...</h2>
+                <p>Wow, after so much work it is finally done. We managed to build fully working
+                    Android app in just 24 hours along with a beautiful website to advertise
+                    our product.We felt very proud about it and the judges were pleased as well. Very
+                    few teams actually manage to go from an idea to an actually working product that can
+                    be deployed over multiple devices in just 24 hours.You can see the presention below
+                    for more details and check the Hive article I wrote.
+                </p>
+
+
+            </div>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+            <a class="btn btn-primary" href="../../projects/hive/hive.html" role="button">Read Hive Article</a>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+            <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()" role="button">See
+                all the pictures</a>
+        </div>
+
+        <div id="my-modal" class="modal">
+            <!--The method closeModal() is called when the user clicks the close button-->
+            <span class="close-model cursor" onclick="closeModal()">&times;</span>
+            <!--Below is the div for the content of the modal-->
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main3.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main4.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main5.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main6.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main7.jpg">
+                </div>
+                <!-- Next/previous controls -->
+                <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
+                <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

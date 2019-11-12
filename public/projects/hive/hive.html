@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" http-equiv="Content-type" content="text/html">
+    <!--This is used to set the viewport accordingly to the device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../scripts/script.js"></script>
+
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-item" href="../../index.html" id="home">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../structure/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../structure/events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../structure/ongoing.html">Ongoing</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="container main-content">
+        <h1 class="font-weight-bold text-black text-center">Hive - connecting people with similar interests</h1>
+        <div class="row">
+            <img src="images/image_main.jpg" class="img-main col-md col-lg" alt="Responsive image">
+            <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
+            <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
+            <div>
+            <h2>!!This has been a group project. See the role of each member below!</h2>
+            <p>Ricards Augustauskis - Java, HTML and CSS programmer</p>
+            <p>Adam Jones - Lead GO programmer</p>
+            <p>Nela Ion - Designer</p>
+            <p>Andrei Avram - Lead Android programmer</p>
+        </div>
+            <h2 class="text-black mt-5">Introduction</h2>
+            <p>I have always loved going to coding competitions just for the simple reason that
+                everyone comes up with a crazier idea each year. It is so pleasant to watch teams
+                working and helping each other in order to bring their idea to life. Although, it is
+                an only 24 hours competitions, it seems like building a working piece of software it
+                is not that hard after all (though caffeine has its role as well)
+            </p>
+            <h2>Idea</h2>
+            <p>For the hackaton we had to choose a certain challenge from the presented list. One challenge that
+                looked appealing to us was te CO-OP one "Design a piece of software that would encourage people around
+                your local area to help each other". After a long session of brainstorming we came up with this idea:
+                "Let's encourage people around the local area to freely share their skills with others". This was the
+                moment
+                Hive was born.
+            </p>
+            <h2>Functionality</h2>
+            <p>Once you log in into the app you are presented with a login screen. If you do not
+                have an account you need to create one and we will verify your email in seconds(the database
+                used was Firebase). When you create your account we kindly ask you to include at first, one interest
+                (Spors, Music, Arts , Programming or Crafting) and a profile picture from a given galery that you can
+                change later (although due to our talented designer I do not think you would want to replace that).
+                <br> Next, you are good to go!
+                <br> The app has three main screens: Learn, Teach and Map
+                <ul class="feature-list">
+                    <li>Learn</li>
+                    <p>This is where you can see the interest you have chose for from the map.
+                        You have at least one selected when you created your account.
+                    </p>
+                    <li>Teach </li>
+                    <p>Interests you are willing to share with others. Once you add something here
+                        everyone that has an account on our app can see your list on the map.</p>
+                    <li>Map</li>
+                    <p>The place where you interact with the world around you. Here
+                        you can see people on the map with their profile picture and what they can
+                        teach you. You select their profile and choose a skills you want to learn. Once
+                        you added that skill it will instantly appear in your Learn section
+                    </p>
+                </ul>
+
+                <h2>Hive - why this name?</h2>
+                <p>Because Manchester of course ! In order to encourage the local popularity of the app we thought that
+                    people that help each other are like bees in a hive. All for one and one for all. This was the
+                    inspiration for the name of our team as well. We constantly presented ourselves to the judges as
+                    being
+                    "The bees"
+                </p>
+                
+
+        </div>
+        <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+            <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()"
+                role="button">See all the screenshots</a>
+        </div>
+        <div id="my-modal" class="modal">
+            <!--The method closeModal() is called when the user clicks the close button-->
+            <span class="close-model cursor" onclick="closeModal()">&times;</span>
+            <!--Below is the div for the content of the modal-->
+            <div class="modal-content">
+                <!--Each div below represents a container for an image-->
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal"  src="images/image_main2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal" src="images/image_main3.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal"  src="images/image_main4.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal"  src="images/image_main5.jpg">
+                </div>
+                <div class="mySlides">
+                    <img class="responsive-image image-modal"  src="images/image_main6.jpg">
+                </div>
+                
+
+                <!-- Next/previous controls -->
+                <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
+                <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+        <a class="btn btn-primary" 
+            role="button">Want to try the app? Download it!</a>
+    </div>
+
+
+
+
+</body>
+
+</html>
