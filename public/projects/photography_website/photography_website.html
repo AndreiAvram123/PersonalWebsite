@@ -1,41 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" http-equiv="Content-type" content="text/html">
-    <!--This is used to set the viewport accordingly to the device width-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photography website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../../scripts/script.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../css/style.css">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <!--The button is used on mobile devices in order to provide a dropdrown navigation bar -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon" ></span></button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <!--This unordered list contains the items of the navigation bar-->
-              <ul class="navbar-nav" id="navigation-list">
-                <li class="nav-item"> <a class="nav-link" href="../../index.html">Home</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="../../structure/projects.html">Projects</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../structure/events.html">Events</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../structure/games.html">Games</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="../../structure/ongoing.html">Ongoing</a></li>
-              </ul>
-            </div>
-        </nav>
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
 
-<body>
+<body onload="loadImages(9)">
+<header>
+</header>
+
+<script>
+    $("header").load('../nav_bar_projects.html');
+    $("head").load('../head_elements_projects.html');
+</script>
+
     <div class="container main-content">
         <h1 class="font-weight-bold text-black text-center">Photography website - Browse a collection of incredible
             pictures</h1>
         <div class="row">
-            <img src="images/image_main.jpg" class="img-main col-md col-lg" alt="Responsive image">
+            <img src="images/image_main1.jpg" class="img-main col-md col-lg" alt="Responsive image">
             <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
             <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
             <h2 class="text-black mt-5">Introduction</h2>
@@ -103,49 +87,18 @@
             </div>
     
             <div id="my-modal" class="modal">
+                <div class="modal-content" id="modal-content">
+
                 <!--The method closeModal() is called when the user clicks the close button-->
                 <span class="close-model cursor" onclick="closeModal()">&times;</span>
-                <!--Below is the div for the content of the modal-->
-                <div class="modal-content">
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main2.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main3.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main4.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main5.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main6.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main7.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main7.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" src="images/image_main7.jpg">
-                    </div>
-                    <!-- Next/previous controls -->
                     <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
                     <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
-            <a class="btn btn-primary" role="button">Check my website!</a>
+            <a class="btn btn-primary"  href="https://andrei-avram-photography.firebaseapp.com/" role="button">Check my website!</a>
         </div>
-        
-            </div>
-   
 
 </body>
 

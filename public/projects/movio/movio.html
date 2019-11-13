@@ -1,159 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" http-equiv="Content-type" content="text/html">
-    <!--This is used to set the viewport accordingly to the device width-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/style.css">
-    <script src="../../scripts/script.js"></script>
-
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link nav-item" href="../../index.html" id="home">Home <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../games.html">Games</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/ongoing.html">Ongoing</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
+    <title>Movio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
-    <div class="container main-content">
-        <h1 class="font-weight-bold text-black text-center">Movio - A better way to search up movies</h1>
-        <div class="row">
-                <img src="images/image_main.jpg" class="img-main col-md col-lg" alt="Responsive image">
-                <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
-                <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
-            <h2 class="text-black mt-5">Introduction</h2>
-            <p>I have always been passionate about movies. I tend to go every single weekend to the cinema with my
-                friends to see the latest and greatest movies that are currently on screen. One of the frequent apps
-                that I am using is IMDb to see the description of a particular movie and its rating. One day,
-                while using the app I thought that it would be an interesting idea to build up my own movie app from
-                scratch. This is the moment Movio was born.
-            </p>
-            <div class="mt-5">
-                <h2 class="text-black">Features</h2>
-                <ul class="feature-list">
-                    <li>See popular and upcoming movies</li>
-                    <p>Once you login into the app you can see the two main screen, popular and upcoming movies.
-                        Thanks to an easy and free to use API called The Movie DB you can get all sort of data
-                        regarding movies or tv series.These two main screens are just a small example of what this API
-                        is capable of.One feature that I am realy proud of is the ability to scroll down the list either
-                        in
-                        the popular or upcoming movies section and the app will load send another HTTP request to load
-                        more movies into
-                        the list.
-                    </p>
-                    <li>Search for a specific movie</li>
-                    <p>Users can get the relevant details about a movie with just a simple search in the app.The
-                        app will send an HTTP request to the Movie API and get data regarding the search if available
-                    </p>
-                    <li>Save movies in your account</li>
-                    <p>Users can save their favorite movies for later offline use. I would say that this used to be
-                        quite
-                        a complicated feature to implement in Android in the past. However, with the new ROOM api,
-                        storing
-                        data will never be easier.Thanks Google </p>
-                </ul>
+<body onload="loadImages(12)">
+<header>
 
-                <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
-                    <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()"
-                        role="button">See all the screenshots</a>
-                </div>
+</header>
 
+<script>
+    $("header").load('../nav_bar_projects.html');
+    $("head").load('../head_elements_projects.html');
+</script>
+
+<div class="container main-content">
+    <h1 class="font-weight-bold text-black text-center">Movio - A better way to search up movies</h1>
+    <div class="row">
+        <img src="images/image_main1.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <h2 class="text-black mt-5">Introduction</h2>
+        <p>I have always been passionate about movies. I tend to go every single weekend to the cinema with my
+            friends to see the latest and greatest movies that are currently on screen. One of the frequent apps
+            that I am using is IMDb to see the description of a particular movie and its rating. One day,
+            while using the app I thought that it would be an interesting idea to build up my own movie app from
+            scratch. This is the moment Movio was born.
+        </p>
+        <div class="mt-5">
+            <h2 class="text-black">Features</h2>
+            <ul class="feature-list">
+                <li>See popular and upcoming movies</li>
+                <p>Once you login into the app you can see the two main screen, popular and upcoming movies.
+                    Thanks to an easy and free to use API called The Movie DB you can get all sort of data
+                    regarding movies or tv series.These two main screens are just a small example of what this API
+                    is capable of.One feature that I am realy proud of is the ability to scroll down the list either
+                    in
+                    the popular or upcoming movies section and the app will load send another HTTP request to load
+                    more movies into
+                    the list.
+                </p>
+                <li>Search for a specific movie</li>
+                <p>Users can get the relevant details about a movie with just a simple search in the app.The
+                    app will send an HTTP request to the Movie API and get data regarding the search if available
+                </p>
+                <li>Save movies in your account</li>
+                <p>Users can save their favorite movies for later offline use. I would say that this used to be
+                    quite
+                    a complicated feature to implement in Android in the past. However, with the new ROOM api,
+                    storing
+                    data will never be easier.Thanks Google </p>
+            </ul>
+
+            <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+                <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()"
+                   role="button">See all the screenshots</a>
             </div>
-        
-            <div id="my-modal" class="modal">
-                <!--The method closeModal() is called when the user clicks the close button-->
-                <span class="close-model cursor" onclick="closeModal()">&times;</span>
-                <!--Below is the div for the content of the modal-->
-                <div class="modal-content">
-                    <!--Each div below represents a container for an image-->
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image1 from category"
-                            src="images/image_main.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image2 from category"
-                            src="images/image_main2.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image3 from category"
-                            src="images/image_main3.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image3 from category"
-                            src="images/image_main4.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image3 from category"
-                            src="images/image_main5.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image3 from category"
-                            src="images/image_main6.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image3 from category"
-                            src="images/image_main7.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image3 from category"
-                            src="images/image_main8.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image3 from category"
-                            src="images/image_main9.jpg">
-                    </div>
-                    <div class="mySlides">
-                        <img class="responsive-image image-modal" alt="image3 from category"
-                            src="images/image_main10.jpg">
-                    </div>
-                    <div class="mySlides">
-                            <img class="responsive-image image-modal" alt="image3 from category"
-                                src="images/image_main11.jpg">
-                        </div>
-                        <div class="mySlides">
-                                <img class="responsive-image image-modal" alt="image3 from category"
-                                    src="images/image_main12.jpg">
-                            </div>
 
-                    <!-- Next/previous controls -->
-                    <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
-                    <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
-                </div>
+        </div>
+
+        <div id="my-modal" class="modal">
+            <!--The method closeModal() is called when the user clicks the close button-->
+            <span class="close-model cursor" onclick="closeModal()">&times;</span>
+            <!--Below is the div for the content of the modal-->
+            <div class="modal-content" id="modal-content">
+                <!--Each div below represents a container for an image-->
+
+
+                <!-- Next/previous controls -->
+                <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
+                <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
-            <a href="https://play.google.com/store/apps/details?id=com.andrei.movieapp"><img class="google-play-badge" src="../../images/google-play-badge.png"></a>
-        </div>
-   
+<div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+    <a href="https://play.google.com/store/apps/details?id=com.andrei.movieapp"><img class="google-play-badge"
+                                                                                     src="../../images/google-play-badge.png"></a>
+</div>
+
 
 </body>
 

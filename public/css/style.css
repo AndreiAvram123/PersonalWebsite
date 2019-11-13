@@ -5,6 +5,10 @@ body{
 .navbar{
     background: #485B73;
 }
+.page-title{
+    font-weight:bold;
+    text-decoration: underline;
+}
 .google-play-badge{
   max-width: 300px;
 }

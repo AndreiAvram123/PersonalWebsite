@@ -1,46 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" http-equiv="Content-type" content="text/html">
-    <!--This is used to set the viewport accordingly to the device width-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/style.css">
-    <script src="../../scripts/script.js"></script>
+    <title>Hive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link nav-item" href="../../index.html" id="home">Home <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../games.html">Games</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/ongoing.html">Ongoing</a>
-                </li>
 
-            </ul>
-        </div>
-    </nav>
 </head>
+<header>
 
+</header>
+
+<script>
+    $("header").load('../nav_bar_projects.html');
+    $("head").load('../head_elements_projects.html');
+</script>
 <body>
     <div class="container main-content">
         <h1 class="font-weight-bold text-black text-center">Hive - connecting people with similar interests</h1>
@@ -74,7 +48,7 @@
             <p>Once you log in into the app you are presented with a login screen. If you do not
                 have an account you need to create one and we will verify your email in seconds(the database
                 used was Firebase). When you create your account we kindly ask you to include at first, one interest
-                (Spors, Music, Arts , Programming or Crafting) and a profile picture from a given galery that you can
+                (Sports, Music, Arts , Programming or Crafting) and a profile picture from a given gallery that you can
                 change later (although due to our talented designer I do not think you would want to replace that).
                 <br> Next, you are good to go!
                 <br> The app has three main screens: Learn, Teach and Map
@@ -101,46 +75,50 @@
                     being
                     "The bees"
                 </p>
-                
+
+            <h2>Video presentation</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="images/video.mp4"
+                            allowfullscreen></iframe>
+                </div>
+
+        </div>
 
         </div>
         <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
             <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()"
                 role="button">See all the screenshots</a>
         </div>
-        <div id="my-modal" class="modal">
-            <!--The method closeModal() is called when the user clicks the close button-->
-            <span class="close-model cursor" onclick="closeModal()">&times;</span>
-            <!--Below is the div for the content of the modal-->
-            <div class="modal-content">
-                <!--Each div below represents a container for an image-->
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal"  src="images/image_main2.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main3.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal"  src="images/image_main4.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal"  src="images/image_main5.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal"  src="images/image_main6.jpg">
-                </div>
-                
-
-                <!-- Next/previous controls -->
-                <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
-                <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
+    <div id="my-modal" class="modal">
+        <!--The method closeModal() is called when the user clicks the close button-->
+        <span class="close-model cursor" onclick="closeModal()">&times;</span>
+        <!--Below is the div for the content of the modal-->
+        <div class="modal-content">
+            <!--Each div below represents a container for an image-->
+            <div class="mySlides">
+                <img class="responsive-image image-modal" src="images/image_main.jpg">
             </div>
-        </div>
-    </div>
+            <div class="mySlides">
+                <img class="responsive-image image-modal"  src="images/image_main2.jpg">
+            </div>
+            <div class="mySlides">
+                <img class="responsive-image image-modal" src="images/image_main3.jpg">
+            </div>
+            <div class="mySlides">
+                <img class="responsive-image image-modal"  src="images/image_main4.jpg">
+            </div>
+            <div class="mySlides">
+                <img class="responsive-image image-modal"  src="images/image_main5.jpg">
+            </div>
+            <div class="mySlides">
+                <img class="responsive-image image-modal"  src="images/image_main6.jpg">
+            </div>
 
+
+            <!-- Next/previous controls -->
+            <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
+            <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
+        </div>
     </div>
 
 

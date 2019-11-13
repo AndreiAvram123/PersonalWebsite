@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Jam</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body onload="loadImages(15)">
+
+<header>
+
+</header>
+<script>
+    $("header").load('../nav_bar_events.html');
+    $("head").load('../head_elements.html');
+</script>
+
+
+<div class="container main-content">
+    <h1 class="page-title text-center">Home Jam Manchester</h1>
+    <div class="row">
+        <img src="images/image_main.JPG" class="img-main col-md col-lg"
+             alt="Responsive image">
+        <img src="images/image_main.JPG" class="img-main col-md col-lg"
+             alt="Responsive image">
+        <img src="images/image_main.JPG" class="img-main col-md col-lg"
+             alt="Responsive image">
+    </div>
+    <div class="row mt-3">
+        <div>
+            <h2>Introduction</h2>
+            <p>The University of Salford organised along with probably the best theatre in town , a Jam dedicated
+                to students. The goal of the event was to create a working game what would encourage people to
+                explore more
+                parts of the theatre while waiting, for example, for a movie to start. </p>
+        </div>
+        <div>
+            <h2>Our idea</h2>
+            <p>After brainstorming and checking up with the judges we decided to stick to this idea : Make
+                a game that would require people to scan certain QR codes placed inside the building and award them
+                if they complete a challenge. A mini game would appear on the screen when a QR code is scanned
+                and after playing it an item would appear in the inventory. We thought that this would be an interactive
+                way of making people explore their surroundings and have fun at the same time (something like pokemon
+                go).</p>
+        </div>
+        <div>
+            <h2>Our final product</h2>
+            <p>After a whole weekend we were proud to say that we made a fully working game! It is nice
+                to say what people create in just 3 days. We made a video with our game in action.</p>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="images/video.mp4"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+        <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()"
+           role="button">See all the screenshots</a>
+    </div>
+    <div id="my-modal" class="modal">
+        <!--The method closeModal() is called when the user clicks the close button-->
+        <span class="close-model cursor" onclick="closeModal()">&times;</span>
+        <!--Below is the div for the content of the modal-->
+        <div class="modal-content" id="modal-content">
+            <!--Each div below represents a container for an image-->
+
+            <!-- Next/previous controls -->
+            <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
+            <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+</body>
+</html>

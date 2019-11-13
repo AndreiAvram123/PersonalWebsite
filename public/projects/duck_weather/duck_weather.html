@@ -1,131 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" http-equiv="Content-type" content="text/html">
-    <!--This is used to set the viewport accordingly to the device width-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/style.css">
-    <script src="../../scripts/script.js"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link nav-item" href="../../index.html" id="home">Home <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../games.html">Games</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/ongoing.html">Ongoing</a>
-                </li>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-            </ul>
-        </div>
-    </nav>
 </head>
 
-<body>
-    <div class="container main-content">
-        <h1 class="font-weight-bold text-black text-center">DuckWeather - Simply check the weather</h1>
-        <div class="row">
-            <img src="images/image_main.jpg" class="img-main col-md col-lg" alt="Responsive image">
-            <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
-            <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
-            <h2 class="text-black mt-5">Introduction</h2>
-            <p>One of the app that I use on a daily basis is a weather app. However, simply because I do want to
-                check the weather does not mean that I want to be overwhelmed by tons of unnecessary features and
-                complicated interfaces, a thing which is very common among weather apps. It is that simple!
-                Consequently, I have built a weather app myself, that is easy to use and offers no more than the
-                basic set of features an user would want(however,I can always add more if requested).Thanks
-                to an easy to use API that offers data in a JSON format, Dark Sky, it was easier than I thought it
-                would be.
+<body onload="loadImages(7)">
+<header>
+
+</header>
+
+<script>
+    $("header").load('../nav_bar_projects.html');
+    $("head").load('../head_elements_projects.html');
+</script>
+
+
+<div class="container main-content">
+    <h1 class="font-weight-bold text-black text-center">DuckWeather - Simply check the weather</h1>
+    <div class="row">
+        <img src="images/image_main1.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <h2 class="text-black mt-5">Introduction</h2>
+        <p>One of the app that I use on a daily basis is a weather app. However, simply because I do want to
+            check the weather does not mean that I want to be overwhelmed by tons of unnecessary features and
+            complicated interfaces, a thing which is very common among weather apps. It is that simple!
+            Consequently, I have built a weather app myself, that is easy to use and offers no more than the
+            basic set of features an user would want(however,I can always add more if requested).Thanks
+            to an easy to use API that offers data in a JSON format, Dark Sky, it was easier than I thought it
+            would be.
+        </p>
+        <h2 class="text-black mt-5">Features</h2>
+        <ul class="feature-list">
+            <li>Current weather</li>
+            <p>The main screen of the app is where you find the current weather displayed according
+                to your location. The details included are current location,current time , temperature, humidity
+                and recipitation chance.
             </p>
-            <h2 class="text-black mt-5">Features</h2>
-            <ul class="feature-list">
-                <li>Current weather</li>
-                <p>The main screen of the app is where you find the current weather displayed according
-                    to your location. The details included are current location,current time , temperature, humidity
-                    and recipitation chance.
-                </p>
-                <li>Daily weather</li>
-                <p>The dark sky Api provided weather forecast for the following 7 days. Using the
-                    in the Daily section of the app you are presented with the min and max temperature of
-                    the next 7 days as well as the sunrise time and sunset time.
-                </p>
-                <li>Hourly weather</li>
-                <p>The user is able to see the hourly temperature for the next 48 hours by going to the
-                    Hourly tab
-                </p>
-                <li>Change your location</li>
-                <p>By utilizing the Google Maps api you are presented with a map on which you can
-                    change your current location to any one you want!
-                </p>
-            </ul>
+            <li>Daily weather</li>
+            <p>The dark sky Api provided weather forecast for the following 7 days. Using the
+                in the Daily section of the app you are presented with the min and max temperature of
+                the next 7 days as well as the sunrise time and sunset time.
+            </p>
+            <li>Hourly weather</li>
+            <p>The user is able to see the hourly temperature for the next 48 hours by going to the
+                Hourly tab
+            </p>
+            <li>Change your location</li>
+            <p>By utilizing the Google Maps api you are presented with a map on which you can
+                change your current location to any one you want!
+            </p>
+        </ul>
 
 
-
-
-
-        </div>
-        <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
-            <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()" role="button">See
-                all the screenshots</a>
-        </div>
-
-        <div id="my-modal" class="modal">
-            <!--The method closeModal() is called when the user clicks the close button-->
-            <span class="close-model cursor" onclick="closeModal()">&times;</span>
-            <!--Below is the div for the content of the modal-->
-            <div class="modal-content">
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main2.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main3.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main4.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main5.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main6.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main7.jpg">
-                </div>
-                <!-- Next/previous controls -->
-                <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
-                <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
-            </div>
-        </div>
     </div>
-    </div>
-
     <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
-            <a><img class="google-play-badge" src="../../images/google-play-badge.png"></a>
+        <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()" role="button">See
+            all the screenshots</a>
+    </div>
+
+    <div id="my-modal" class="modal">
+        <!--The method closeModal() is called when the user clicks the close button-->
+        <span class="close-model cursor" onclick="closeModal()">&times;</span>
+        <!--Below is the div for the content of the modal-->
+        <div class="modal-content" id="modal-content">
+
+            <!-- Next/previous controls -->
+            <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
+            <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
         </div>
+    </div>
+</div>
+
+<div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+    <a><img class="google-play-badge" src="../../images/google-play-badge.png"></a>
+</div>
 
 
 </body>

@@ -1,152 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" http-equiv="Content-type" content="text/html">
-    <!--This is used to set the viewport accordingly to the device width-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galactic Defenders</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/style.css">
-    <script src="../../scripts/script.js"></script>
-
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link nav-item" href="../../index.html" id="home">Home <span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../games.html">Games</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../../structure/ongoing.html">Ongoing</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body>
-    <div class="container main-content">
-        <h1 class="font-weight-bold text-black text-center">Galactic Defenders - A funny tower defense game built using
-            the Unity Engine</h1>
-        <div class="row">
-            <img src="images/image_main.jpg" class="img-main col-md col-lg" alt="Responsive image">
-            <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
-            <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
-            <h2 class="text-black mt-5">Introduction</h2>
-            <p>One of my favorite types of games is tower defence, especially ones that have something special
-                like an alien theme in them. The mechanics of such a game are not complicated,usually, the player needs
-                to
-                defend his base agains waves of enemies by placing turrets in certain areas.
-                One personality trait that I have is the passion to build things from scratch.
-                My motto is "Why would you buy it when you can make it?"(you also learn a lot of things along the way
-                and have fun).This was the starting point for this project(or I should say all my projects...).
+<body onload="loadImages(4)">
+<header id ="container_navbar">
+
+</header>
+
+<script>
+    $("header").load('../nav_bar_projects.html');
+    $("head").load('../head_elements_projects.html');
+</script>
+
+<div class="container main-content">
+    <h1 class="font-weight-bold text-black text-center">Galactic Defenders - A funny tower defense game built using
+        the Unity Engine</h1>
+    <div class="row">
+        <img src="images/image_main1.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <img src="images/image_main2.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <img src="images/image_main3.jpg" class="img-main col-md col-lg" alt="Responsive image">
+        <h2 class="text-black mt-5">Introduction</h2>
+        <p>One of my favorite types of games is tower defence, especially ones that have something special
+            like an alien theme in them. The mechanics of such a game are not complicated,usually, the player needs
+            to
+            defend his base agains waves of enemies by placing turrets in certain areas.
+            One personality trait that I have is the passion to build things from scratch.
+            My motto is "Why would you buy it when you can make it?"(you also learn a lot of things along the way
+            and have fun).This was the starting point for this project(or I should say all my projects...).
+        </p>
+        <h2 class="text-black mt-5">Mechanics</h2>
+        <p>As I said above, the mechanics of such a game are not complicated and my game is no
+            exception from the rule.You have waves of enemies coming to attack your base and you must place
+            defence towers around the map to protect it. Towers can be placed on red cubes on the map.
+            However, I am still thinking about adding
+            some extra features such as the ability for the player to freeze the enemies or maybe repair
+            his base.
+        </p>
+        <h2 class="text-black mt-5">Implementation</h2>
+        <ul class="feature-list">
+            <li>Breadth first search algorithm</li>
+            <p>This is the main component that "powers my game". Using this algorithm I have given every enemy
+                the ability to find a path to the player's base. In the Unity inspector I can simply mark
+                an object as the player base and voila, the algorithm will then tell the enemy which path
+                to take.But hold on! There is something special in this. Imagine the player being able
+                to put a barier in the enemies'path. What's would happen next ? The algorithm will find
+                a different way for the enemies to reach the player's base.
             </p>
-            <h2 class="text-black mt-5">Mechanics</h2>
-             <p>As I said above, the mechanics of such a game are not complicated and my game is no 
-                 exception from the rule.You have waves of enemies coming to attack your base and you must place
-                 defence towers around the map to protect it. Towers can be placed on red cubes on the map.
-                 However, I am still thinking about adding 
-                 some extra features such as the ability for the player to freeze the enemies or maybe repair 
-                 his base.
-             </p>
-             <h2 class="text-black mt-5">Implementation</h2>
-             <ul class="feature-list">
-                    <li>Breadth first search algorithm</li>
-                    <p>This is the main component that "powers my game". Using this algorithm I have given every enemy 
-                       the ability to find a path to the player's base. In the Unity inspector I can simply mark 
-                       an object as the player base and voila, the algorithm will then tell the enemy which path 
-                       to take.But hold on! There is something special in this. Imagine the player being able 
-                       to put a barier in the enemies'path. What's would happen next ? The algorithm will find 
-                       a different way for the enemies to reach the player's base.
-                    </p>
-                    <li>Player Health system</li>
-                    <p>Every enemy that reaches the base will explode and decrease the life of the player.
-                       I have decided that once 5 enemies reach the base the game is over
-                    </p>
-                    <li>Enemy Health system</li>
-                    <p>Once an enemy has come within shooting range, a tower will start to fire. Depending 
-                        on the how many towers are around the enemy might die instantly.
-                    </p>
-                    <li>Assets</li>
-                    <p>The theme of my game is defending a solar base from an enemy invasion. Because of 
-                        these beautiful assets I managed to give my game exactly the look I wanted.
-                        <strong>However, I have to mention that the assets are not created by me. 
-                            These are free assets from Asset Store 
-                    </strong> 
-                    </p>
-                </ul>
-    
-    
+            <li>Player Health system</li>
+            <p>Every enemy that reaches the base will explode and decrease the life of the player.
+                I have decided that once 5 enemies reach the base the game is over
+            </p>
+            <li>Enemy Health system</li>
+            <p>Once an enemy has come within shooting range, a tower will start to fire. Depending
+                on the how many towers are around the enemy might die instantly.
+            </p>
+            <li>Assets</li>
+            <p>The theme of my game is defending a solar base from an enemy invasion. Because of
+                these beautiful assets I managed to give my game exactly the look I wanted.
+                <strong>However, I have to mention that the assets are not created by me.
+                    These are free assets from Asset Store
+                </strong>
+            </p>
+        </ul>
 
 
-
-
-
-        </div>
-        <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
-            <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()" role="button">See
-                all the screenshots</a>
-        </div>
-
-        <div id="my-modal" class="modal">
-            <!--The method closeModal() is called when the user clicks the close button-->
-            <span class="close-model cursor" onclick="closeModal()">&times;</span>
-            <!--Below is the div for the content of the modal-->
-            <div class="modal-content">
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main2.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main3.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main4.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main5.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main6.jpg">
-                </div>
-                <div class="mySlides">
-                    <img class="responsive-image image-modal" src="images/image_main7.jpg">
-                </div>
-                <!-- Next/previous controls -->
-                <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
-                <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
-            </div>
-        </div>
-    </div>
     </div>
     <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
-            <a><img class="google-play-badge" src="../../images/google-play-badge.png"></a>
-        </div>
-      
-    <div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
-        <a class="btn btn-primary" role="button">Download the game for Windows</a>
+        <a class="btn btn-secondary" style="color:white;font-size: 20px;" onclick="openModal()" role="button">See
+            all the screenshots</a>
     </div>
-    
-    
+
+    <div id="my-modal" class="modal">
+        <!--The method closeModal() is called when the user clicks the close button-->
+        <span class="close-model cursor" onclick="closeModal()">&times;</span>
+        <!--Below is the div for the content of the modal-->
+        <div class="modal-content" id="modal-content">
+            <<!-- Next/previous controls -->
+            <a class="prev-button" onclick="plusSlides(-1,1)">&#10094;</a>
+            <a class="next-button" onclick="plusSlides(1,1)">&#10095;</a>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+    <a><img class="google-play-badge" src="../../images/google-play-badge.png"></a>
+</div>
+
+<div class="row justify-content-center" style="margin-top: 10px;margin-bottom: 10px;">
+    <a class="btn btn-primary" role="button">Download the game for Windows</a>
+</div>
 
 
 </body>
