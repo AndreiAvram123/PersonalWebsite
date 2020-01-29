@@ -1,3 +1,4 @@
+
 function loadImages(numberOfImages) {
     var modalContent = document.getElementById("modal-content");
     for (let i = 1; i <= numberOfImages; i++) {

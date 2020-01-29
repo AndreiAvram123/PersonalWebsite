@@ -11,10 +11,6 @@
 <header>
 
 </header>
-<script>
-    $("header").load('nav_bar_structure.html');
-    $("head").load('head_elements_structure.html');
-</script>
     <div class="container main-content">
         <h1 class="center-block">These are some of the most important events I took part in</h1>
         <div class="row" style="margin-top: 20px">
@@ -58,8 +54,13 @@
         </div>
 
     </div>
-
-
+<div id ="container_scripts">
+</div>
+<script>
+    $("header").load('nav_bar_structure.html');
+    $("head").load('head_elements_structure.html');
+    $("#container_scripts").load('included_scripts.html');
+</script>
 </body>
 
 </html>

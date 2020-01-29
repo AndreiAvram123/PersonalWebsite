@@ -5,13 +5,11 @@
     <title>Games</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+<body>
 <header>
 
 </header>
-<script>
-    $("header").load('nav_bar_structure.html');
-    $("head").load('head_elements_structure.html');
-</script>
+
     <div class="row" style="margin-top: 20px;">
         <div class="card" style="width: 25rem;">
             <img class="card-img-top" src="../games/galactic_defenders/card.png" alt="Card image cap">
@@ -28,7 +26,14 @@
             </div>
         </div>
     </div>
+   <div id="container_scripts">
 
+   </div>
+   <script>
+       $("header").load('nav_bar_structure.html');
+       $("head").load('head_elements_structure.html');
+       $("#container_scripts").load('included_scripts.html');
+   </script>
     </body>
 
 </html>

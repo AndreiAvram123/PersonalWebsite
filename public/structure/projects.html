@@ -10,10 +10,6 @@
 <header>
 
 </header>
-<script>
-    $("header").load('nav_bar_structure.html');
-    $("head").load('head_elements_structure.html');
-</script>
     <div class="container main-content">
         <div class="row">
             <div class="card col-md col-lg ">
@@ -84,7 +80,14 @@
         </div>
 
     </div>
+<div id="container_scripts">
 
+</div>
+<script>
+    $("header").load('nav_bar_structure.html');
+    $("head").load('head_elements_structure.html');
+    $("#container_scripts").load('included_scripts.html');
+</script>
 
 </body>
 

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/testStyle.css">
     <meta name="keywords" content="Andrei Avram,personal projects">
+</head>
+<body>
+<header>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <!--The button is used on mobile devices in order to provide a dropdrown navigation bar -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -25,37 +30,50 @@
             </ul>
         </div>
     </nav>
-</head>
-
-<body>
-<header>
-
 </header>
+
 <div class="container main-content text-center">
-    <h1 class="font-weight-bold">Hi! My name is Andrei Avram.</h1>
-    <h2> I am a passionate Android and Game Developer that is currently studying Computer Science
-        in the second year at the University of Salford. I am constantly seeking to improve both my technical and soft
-        skills by trying new projects every single day.</h2>
-    <img src="images/profile_picture.png " class="img-fluid center-block rounded-circle" style="width:15rem"
-         alt="Responsive image">
-    <div class="row justify-content-center">
-        <a href="structure/projects.html" class="btn btn-lg mt-4">Check my portofolio!</a>
+    <div class="row">
+        <div class="col">
+        <h1 class="font-weight-bold">Hi! My name is Andrei Avram.</h1>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col">
+        <h2> I am a passionate Android and Game Developer that is currently studying Computer Science
+            in the second year at the University of Salford. I am constantly seeking to improve both my technical and
+            soft
+            skills by trying new projects every single day.</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <img src="images/profile_picture.png " class="img-fluid center-block rounded-circle" style="width:15rem"
+             alt="Responsive image">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <div class="row justify-content-center">
+            <a href="structure/projects.html" class="btn btn-lg mt-4">Check my portofolio!</a>
+        </div>
+        </div>
     </div>
 
 </div>
-<footer class="footer fixed-bottom">
-    <div class="container text-center">
+<footer>
+<div class="row mt-3">
+    <div class="col text-center">
         <i><a href="https://www.facebook.com/avram.andreitiberiu" target="blank" class="fa fa-facebook"></a></i>
         <i><a href="https://github.com/AndreiAvram123" target="blank" class="fa fa-git-square"></a></i>
         <i><a href="https://www.linkedin.com/in/andrei-avram-54776b140/" target="blank" class="fa fa-linkedin "></a></i>
     </div>
+</div>
 </footer>
+
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/7.2.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-   https://firebase.google.com/docs/web/setup#available-libraries -->
 
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
